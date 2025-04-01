@@ -7,46 +7,33 @@
 </head>
 <body>
 
-        <link rel="icon" href="./imp.PNG" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HBCVL1X8FB"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-HBCVL1X8FB');
-    </script>
-
-</head>
-<body>
-    <div class="container">
-        <h1><img src="tbIcon.PNG" width="100" id="logo"> 𝐓𝐨𝐛𝐢 </h1>
+       <h1>Navigation Bar With Icons</h1>
+    <button onclick="toggleNav()" style="float: right">Open/Close NEv</button>
+    <div class="navbar">
+      <a href="#" class="navbar__link">
+        <span class="material-icons">home</span>
+        Home
+      </a>
+      <a href="#" class="navbar__link">
+        <span class="material-icons">photo_library</span>
+        Photos
+      </a>
+      <a href="#" class="navbar__link">
+        <span class="material-icons">question_answer</span>
+        Forum
+      </a>
+      <a href="#" class="navbar__link">
+        <span class="material-icons">exit_to_app</span>
+        Logout
+      </a>
     </div>
+  </body>
 
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex align-items-center">
-                    <p><span class="text-primary"><b>私のクッキー :      </span></b></p>
-               <a class="btn btn-sm btn-primary" href="javascript:void(0);" onclick="copyToClipboard('https://ytbtobi.github.io')">トビ</a>
-                </div>
+  <script>
+    function toggleNav() {
+      document.querySelector(".navbar").classList.toggle("navbar--open");
 
-        </div>
-    </div>
-
-    <p></p>
-
-    <div class="container cards-container">
-        <div class="outside-buttons">
-            <a class="btn btn-sm btn-primary mb-2" href="https://www.youtube.com/@TobiAgario">Subscribe</a>
-            <a class="btn btn-sm btn-primary mb-2" href="https://github.com/ytbtobi">GitHub</a>
-        </div>
-    </div>
-
-
+    }
+  </script>
 </body>
 </html>
